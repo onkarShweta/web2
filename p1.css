@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    /* background-color: aqua; */
+}
+body{
+    overflow: hidden;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+
+
+#background{
+    
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    
+    
+}
+#circle{
+    position: absolute;
+    transform: translate(-50%,-50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1.2px solid white;
+  z-index: 9999999999;
+  pointer-events: none;
+}
+#wrapper h1{
+    color: #fff;
+    font-size: 600px;
+    font-family: "Montserrat";
+    font-weight: 900;
+
+
+}
+#wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+   background-position: 50% center;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: url(https://images.unsplash.com/photo-1606857521015-7f9fcf423740?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8b2ZmaWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+}
+#whitestrip{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 55%;
+    transform: translate(0,-50%);
+    height: 140px;
+    background-color: white;
+}
+#blackcard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+
+    position: absolute;
+    transform: translate(-50%,-50%);
+    width: 240px;
+    height: 330px;
+    background-color: black;
+    top: 50%;
+    left: 0;
+    
+    
+}
+#blackcard p{
+  
+    color: white;
+    font-family:"bigilla";
+    font-size: 14px;
+    text-align: center;
+    line-height: 26px;
+}
+#linelem .line{
+ 
+  width: 200px;
+  height: 2px;
+  background-color: black;
+  margin: 0 30px;
+}
+#linelem{
+    display: flex;
+    align-items: center;
+}
+#linelem h4{
+    font-family: "bigilla";
+    font-size: 13px;
+
+}
+#linelem i{
+    cursor: pointer;
+}
+#background>h5{
+    position: absolute;
+    color: white;
+    font-family: "Montserrat";
+    top: 50%;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 15px;
+    font-size: 8px;
+    transform: rotate(-90deg);
+}
